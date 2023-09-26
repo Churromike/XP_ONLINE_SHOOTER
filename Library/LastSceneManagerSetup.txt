@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/MIGUEL/SCENES/SampleScene.unity
+- path: Assets/ANDY/SCENES/ANDYSCENE.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
