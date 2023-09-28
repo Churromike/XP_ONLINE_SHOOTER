@@ -22,6 +22,14 @@ public class ControladorLobby : MonoBehaviourPunCallbacks
     private void Awake()
     {
 
+        Awake_PanelInicio();
+        Awake_PanelSala();
+
+    }
+
+    private void Awake_PanelInicio()
+    {
+
         //Paneles
         panelInicio.gameObject.SetActive(true);
         panelSala.gameObject.SetActive(false);
@@ -114,10 +122,28 @@ public class ControladorLobby : MonoBehaviourPunCallbacks
     [SerializeField] private GameObject panelSala;
     [SerializeField] private Transform panelJugadores;
     [SerializeField] private SlotPlayer pfSlotPlayer;
+    [SerializeField] private Button botonIniciarPartida;
+
+    private void Awake_PanelSala()
+    {
+
+        botonIniciarPartida.gameObject.SetActive(false);
+
+    }
+
+
+    //Se ejecuta solo una vez con el jugador que creo la partida
+    public override void OnCreatedRoom()
+    {
+
+        botonIniciarPartida.gameObject.SetActive(true);
+
+    }
 
     //Se ejecuta cuando creamos o nos unimos a una sala
     public override void OnJoinedRoom()
     {
+
         PhotonNetwork.AutomaticallySyncScene = true;
 
         panelInicio.SetActive(false);
@@ -125,6 +151,32 @@ public class ControladorLobby : MonoBehaviourPunCallbacks
 
     }
 
+    //Se ejecuta cuando un nuevo jugador entra a la sala
+    public override void OnPlayerEnteredRoom(Player newPlayer)
+    {
+
+        //Le pasamos como argumento el newPlayer que entro a la sala
+        CrearSlot(newPlayer);
+
+    }
+
+    private void CrearSlot(Player player)
+    {
+
+        //Se hace el spawn el slot dentro del Panel Jugadores
+        SlotPlayer slotPlayer = Instantiate(pfSlotPlayer, panelJugadores);
+
+        //Le establecemos su Player de Photon
+        slotPlayer.Player = player;
+
+    }
+
+    private void CargarTodosLosSlots()
+    {
+
+
+
+    }
 
     #endregion PanelSala
 

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{94F39C1A-CB75-E654-51BC-A9C1E3B552C8}</ProjectGuid>
+    <ProjectGuid>{6F6F7417-8F04-F8D3-21BD-5DB14277B2E5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>PhotonRealtime</AssemblyName>
