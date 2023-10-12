@@ -1,7 +1,6 @@
 using Photon.Pun;
 using Photon.Realtime;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -56,7 +55,7 @@ public class ControladorLobby : MonoBehaviourPunCallbacks
     //Este metodo se ejecutara cuando nos conectamos al servidor
     public override void OnConnectedToMaster()
     {
-        
+
         //Nos intentamos unir al Lobby
         PhotonNetwork.JoinLobby();
 
@@ -149,6 +148,8 @@ public class ControladorLobby : MonoBehaviourPunCallbacks
         panelInicio.SetActive(false);
         panelSala.SetActive(true);
 
+        CargarTodosLosSlots();
+
     }
 
     //Se ejecuta cuando un nuevo jugador entra a la sala
@@ -173,7 +174,12 @@ public class ControladorLobby : MonoBehaviourPunCallbacks
 
     private void CargarTodosLosSlots()
     {
+        Dictionary<int, Player> players = PhotonNetwork.CurrentRoom.Players;
 
+        foreach (Player player in players.Values)
+        {
+            CrearSlot(player);
+        }
 
 
     }

@@ -735,7 +735,9 @@ MonoBehaviour:
   mensajeInicio: {fileID: 932649518}
   panelSala: {fileID: 1675477294}
   panelJugadores: {fileID: 1616820575}
-  pfSlotPlayer: {fileID: 0}
+  pfSlotPlayer: {fileID: 1106083127873840716, guid: 9ccb7159c934adf4cac536912637621d,
+    type: 3}
+  botonIniciarPartida: {fileID: 323314695}
 --- !u!4 &848403508
 Transform:
   m_ObjectHideFlags: 0
