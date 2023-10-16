@@ -541,6 +541,7 @@ MonoBehaviour:
   panelJugadores: {fileID: 1967375231}
   pfSlotPlayer: {fileID: 6193990888849275076, guid: e5e980ef075fb654795e125be60afcbb,
     type: 3}
+  botonIniciarPartida: {fileID: 1800508860}
 --- !u!4 &848403508
 Transform:
   m_ObjectHideFlags: 0

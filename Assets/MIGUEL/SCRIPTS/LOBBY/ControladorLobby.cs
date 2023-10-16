@@ -174,13 +174,13 @@ public class ControladorLobby : MonoBehaviourPunCallbacks
 
     private void CargarTodosLosSlots()
     {
+
         Dictionary<int, Player> players = PhotonNetwork.CurrentRoom.Players;
 
         foreach (Player player in players.Values)
         {
             CrearSlot(player);
         }
-
 
     }
 

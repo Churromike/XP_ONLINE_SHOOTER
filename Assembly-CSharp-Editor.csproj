@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6145E358-7F13-95F7-7CDD-62A9D9CF0215}</ProjectGuid>
+    <ProjectGuid>{F15D96A5-BEBD-0CA8-F235-170FA20E31E8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -854,47 +854,47 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{10B955E0-1846-B8D6-54CE-C3931B5B3E59}</Project>
+      <Project>{7D0438F1-84E7-93C3-8FB1-D336A122CF0E}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
-      <Project>{E577CC40-3F3E-3453-DA7E-9761F1A2D159}</Project>
+      <Project>{80DDF8C7-E724-84AC-6F4A-E082F54632D6}</Project>
       <Name>PhotonUnityNetworking</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonChat.csproj">
-      <Project>{1F49155A-508B-3DB9-CB80-7883AEDD52B3}</Project>
+      <Project>{98365BE6-30D7-C07C-0598-5B095FD6C463}</Project>
       <Name>PhotonChat</Name>
     </ProjectReference>
     <ProjectReference Include="PunDemos.DemoSlotcarEditor.csproj">
-      <Project>{57DBF669-6FC7-0935-62AE-43CA5EC61E3B}</Project>
+      <Project>{C06EBD5B-596E-2613-622C-CC4C1257A8F0}</Project>
       <Name>PunDemos.DemoSlotcarEditor</Name>
     </ProjectReference>
     <ProjectReference Include="PunDemos.DemoHubEditor.csproj">
-      <Project>{4D9AE6D3-DFAE-2D27-0554-4328C2683338}</Project>
+      <Project>{F41BC0E4-2C06-B805-4B80-0719DF368676}</Project>
       <Name>PunDemos.DemoHubEditor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
-      <Project>{A4334A11-B7F6-0B59-2A69-2BBC0565057E}</Project>
+      <Project>{9056AEF7-051D-5629-68C4-22C684D73023}</Project>
       <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
-      <Project>{F552A9B2-E2F1-B53B-77D2-CC8BCA0B0049}</Project>
+      <Project>{31F62E99-1697-FCC8-D658-668C29ECDDD9}</Project>
       <Name>PhotonUnityNetworking.Utilities</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
-      <Project>{F0C31A3E-EEEA-0B96-172A-5ECAC94B2EB8}</Project>
+      <Project>{E61C1BE4-723B-5069-3B76-E4117341DEBF}</Project>
       <Name>PhotonUnityNetworking.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
-      <Project>{3197FD75-4458-2B96-2FAE-7200316B3497}</Project>
+      <Project>{5705E725-DE93-0EC8-3E3A-75749480AB33}</Project>
       <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Demos.csproj">
-      <Project>{4180300C-15F9-0F24-2B38-3BE8BB88DB47}</Project>
+      <Project>{DED509BC-B7DF-E018-6403-6509909FED35}</Project>
       <Name>PhotonUnityNetworking.Demos</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonRealtime.csproj">
-      <Project>{6F6F7417-8F04-F8D3-21BD-5DB14277B2E5}</Project>
+      <Project>{B0A162AE-77B5-71A9-1C4C-5E915E570340}</Project>
       <Name>PhotonRealtime</Name>
     </ProjectReference>
   </ItemGroup>
